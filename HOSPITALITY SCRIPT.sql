@@ -133,7 +133,7 @@ GROUP BY booking_channel
 ORDER BY SUM(avg_room_rate) DESC;
 
 
--- 6. what is the percentage of the differnt reservation status
+-- 6. what is the percentage of the different reservation status
 SELECT property,
        reservation_status,
        COUNT(*) AS status_count,
@@ -152,7 +152,7 @@ GROUP BY property
 ORDER BY SUM(avg_room_rate) DESC; 
 
 
--- 8. What is the avage stay duration 
+-- 8. What is the average stay duration 
 SELECT CONCAT(ROUND(AVG(stay_duration)),' DAYS') AS average_stay_duration
 FROM records; 
 
@@ -164,6 +164,14 @@ FROM records
 GROUP BY booking_channel,
 		 DATE_FORMAT(check_in_dates, '%M')
 ORDER BY  COUNT(*) DESC; 
+
+-- 10. percentage of special request flags for all properties
+SELECT special_request_flag
+       COUNT(*) AS special_request_flag_count
+       COUNT(*) / (SELECT COUNT(*) FROM records) * 100 AS percentage
+FROM records
+GROUP BY special_request_flag
+ORDER BY COUNT(*) DESC;
 
 
 
