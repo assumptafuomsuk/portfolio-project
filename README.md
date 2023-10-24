@@ -7,6 +7,8 @@ here are the steps I followed.
 4. I wrote some queries to answer some questions.
 5. created a visualizations.
 
+   
+
    questions answered:
 1. What is the rate paid for each room in each hotel?
 2. What are the different room types in each property and their booking frequencies?
