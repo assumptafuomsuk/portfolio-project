@@ -1,11 +1,11 @@
 In this project, I analyzed a dataset from a site called Real-world Fake. here is the link to the site. https://data.world/markbradbourne/rwfd-real-world-fake-data/workspace/file?filename=Hospitality.csv
 They have some really amazing data sets that are beginner-friendly.
 here are the steps I followed.
-1. Downloaded the CSV file
-2. imported it into MySQL workbench
-3. cleaned the data
-4. I wrote some queries to answer some questions.
-5. created a visualizations.
+. Downloaded the CSV file
+. imported it into MySQL workbench
+. cleaned the data
+. I wrote some queries to answer some questions.
+. created visualizations.
 
    
 
