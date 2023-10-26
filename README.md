@@ -1,15 +1,11 @@
 In this project, I analyzed a dataset from a site called Real-world Fake. here is the link to the site. https://data.world/markbradbourne/rwfd-real-world-fake-data/workspace/file?filename=Hospitality.csv
 They have some really amazing data sets that are beginner-friendly.
-here are the steps I followed.
-. Downloaded the CSV file
-. imported it into MySQL workbench
-. cleaned the data
-. I wrote some queries to answer some questions.
-. created visualizations.
+**steps:**
+I downloaded a CSV file and imported it into MySQL Workbench. After importing, I performed data cleaning to ensure the data's quality and consistency. Following that, I crafted a series of SQL queries to address specific questions and extract relevant insights from the data. Additionally, I leveraged Power BI to create a dashboard that visually presented the findings and allowed for a more intuitive and interactive exploration of the data.
 
    
 
-   questions answered:
+   **Questions answered:**
 1. What is the rate paid for each room in each hotel?
 2. What are the different room types in each property and their booking frequencies?
 3. How many guests checked into each property throughout the year?
