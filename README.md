@@ -1,5 +1,8 @@
 In this project, I analyzed a dataset from a site called Real-world Fake. here is the link to the site. https://data.world/markbradbourne/rwfd-real-world-fake-data/workspace/file?filename=Hospitality.csv
 They have some really amazing data sets that are beginner-friendly.
+
+
+
 **steps:**
 I downloaded a CSV file and imported it into MySQL Workbench. After importing, I performed data cleaning to ensure the data's quality and consistency. Following that, I crafted a series of SQL queries to address specific questions and extract relevant insights from the data. Additionally, I leveraged Power BI to create a dashboard that visually presented the findings and allowed for a more intuitive and interactive exploration of the data.
 
