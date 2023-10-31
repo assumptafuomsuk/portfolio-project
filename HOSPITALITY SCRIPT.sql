@@ -62,6 +62,14 @@ DROP booking_date;
 SELECT *
 FROM records;
 
+-- Create a new column called check_out_date
+ALTER TABLE records
+ADD COLUMN check_out_date DATE;
+
+--  will be adding the check_in_date plus the stay_duration to generate a checkout date for each property.
+UPDATE records
+SET check_out_date = DATE_ADD(check_in_dates, INTERVAL stay_duration DAY);
+
 SET SQL_SAFE_UPDATES = 1;
 
 -- the total number of records in the table 
@@ -85,7 +93,6 @@ SELECT DISTINCT rate_type
 FROM records;
 
 -- 1. What is the rate paid for each room in each hotel?
-
 SELECT property,
        room_type,
        rate_type,
@@ -99,7 +106,6 @@ ORDER BY property;
 
 
 -- 2. Different room types in each property and the number of times they were booked 
-
 SELECT property,
        room_type,
        COUNT(*) AS room_type_count
